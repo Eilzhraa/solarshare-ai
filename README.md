@@ -82,14 +82,7 @@ src/*.test.js                 Unit tests for rules and storage
 .github/workflows/deploy.yml  GitHub Pages build/deploy workflow
 ```
 
-## Publish with GitHub Pages
 
-The included Vite base path is `/solarshare-ai/` and the site uses `HashRouter`. For a repository named **solarshare-ai**:
-
-1. Push the project source (including `.github`, `package.json`, `package-lock.json`) to the `main` branch. Do not push `node_modules` or personal test data.
-2. In the repository, open Settings → Pages → select **GitHub Actions** as the source.
-3. Allow the existing **Deploy to GitHub Pages** workflow to run; it runs `npm ci`, tests and production build, then publishes `dist`.
-4. Open `https://YOUR-USERNAME.github.io/solarshare-ai/`.
 
 If you use another repository name, update `base` in `vite.config.js`. **This project was not pushed or deployed by this audit.**
 
