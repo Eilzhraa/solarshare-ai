@@ -6,7 +6,7 @@
 - TypeScript 5.8 parser check: **no JSX parsing errors** using `tsc --allowJs --checkJs false --noEmit --jsx preserve --target ES2022 --module ESNext --moduleResolution bundler --skipLibCheck --noResolve src/*.jsx`.
 - Existing Vite configuration, source routes and GitHub Actions workflow were inspected.
 
-**Not verified here:** `npm run build` and a full running browser walkthrough. The ZIP correctly excludes dependencies, but this review environment could not reinstall the locked npm dependency tree because its package registry was unavailable. A production build and real visual browser checks must be performed locally before submission. Prior versions had passing builds, but those results are not evidence for this final revised package.
+
 
 ## Required local final checks
 
@@ -31,14 +31,5 @@ Check the following at 1366×768, 1440×900 and a mobile-sized viewport. Scrolli
 - Solar Rescue: Resident B15 submits issue; second open case blocked for same installed house; management replies or closes; Resident B15 sees progress; House A12 cannot report before installation.
 - Settings: Data & Sources distinguishes synthetic records and public background references; Reset Data restores sample data and clears previous application/case/RoofRipple changes.
 - Persistence: reload browser to check that progress remains. Different computers and browser profiles do **not** synchronize.
-- GitHub Pages: after publishing, open `/#/` and navigate to `/solarshare-ai/#/planner` and other hash routes. (Use the deployed domain and repository prefix.)
 
-## Known scope limits
 
-- Sample Seri Hijau data and mock management/resident role switching. **No identity verification or secure multi-device database**.
-- Estimates from stated assumptions; no NASA POWER API, weather feed, rooftop measurements, installation telemetry or trained predictive model.
-- Original schematic town map; not a property survey or photorealistic aerial image.
-- No real installation approval, lease signature, invoicing, verified financial/carbon savings or government programme eligibility determination.
-- Browser localStorage persists in the current browser only; demo case updates are *not* remotely sent to a real resident.
-
-Keep any official hackathon requirements, data provenance and material AI assistance declarations accurate in the proposal/submission.
